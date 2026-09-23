@@ -2,6 +2,7 @@ import { useEffect, useReducer, useState } from "react";
 import { CHANNELS, type Brief, type Channel } from "../../shared/schema";
 import { buildTracking } from "../../shared/campaign";
 import type { Check } from "../../shared/checks";
+import { evaluateAsset } from "../../shared/evaluate";
 import AssetCard from "./components/AssetCard";
 import BriefForm from "./components/BriefForm";
 import CampaignPlan from "./components/CampaignPlan";
@@ -27,12 +28,17 @@ export default function App() {
     getHealth().then((result) => setHealth(!result ? "down" : result.hasApiKey ? "ok" : "no-key"));
   }, []);
 
+  // Save the campaign in the browser every time it changes
   useEffect(() => {
     if (campaign) saveCampaign(campaign);
     else clearCampaign();
   }, [campaign]);
 
-  const getChecks = (_channel: Channel): Check[] => [];
+  // Automated checks for one channel
+  const getChecks = (channel: Channel): Check[] => {
+    const asset = campaign?.assets[channel];
+    return campaign && asset ? evaluateAsset(channel, asset.content, campaign.brief, campaign.facts) : [];
+  };
 
   async function generateChannel(current: Campaign, channel: Channel, instruction?: string) {
     setLoading((prev) => ({ ...prev, [channel]: true }));

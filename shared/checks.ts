@@ -15,4 +15,4 @@ export function scoreChecks(checks: Check[]): number | null {
     return Math.round((100 * points) / scored.length);
 }
 
-export const hasFailure = (checks: Check[]) => checks.some((c) => c.severity === "fail")
+export const hasFailures = (checks: Check[]) => checks.some((c) => c.severity === "fail");
