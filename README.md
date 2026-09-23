@@ -20,8 +20,10 @@ The free hosting tier sleeps after inactivity, so the first load after a pause c
 
 * ![Brief form]
 <img src="./docs/brief-form.png" alt="Brief Form">
+
 * ![Asset review with automated checks]
 <img src="./docs/asset-review.png" alt="Asset Review">
+
 * ![Exporting generated results with options]
 <img src="./docs/export-options.png" alt="Export options">
 
