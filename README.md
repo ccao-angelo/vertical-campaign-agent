@@ -18,21 +18,24 @@ The free hosting tier sleeps after inactivity, so the first load after a pause c
 
 ## 4. Walkthrough screenshots
 
-* ![Brief form] <img src="./docs/brief-form.png" alt="Brief Form">
-* ![Asset review with automated checks] <img src="./docs/asset-review.png" alt="Asset Review">
-* ![Exporting generated results with options] <img src="./docs/export-options.png" alt="Export options">
+* ![Brief form]
+<img src="./docs/brief-form.png" alt="Brief Form">
+* ![Asset review with automated checks]
+<img src="./docs/asset-review.png" alt="Asset Review">
+* ![Exporting generated results with options]
+<img src="./docs/export-options.png" alt="Export options">
 
 ## 5. Main features
 
 - **Structured campaign brief** with field-level validation (audience, objective, funnel stage, approved facts, CTA, prohibited terms)
-- **Grounded multi-channel generation** — email, LinkedIn post, and digital postcard, each with A/B variants, generated only from the brief's approved facts
-- **Automated quality checks** that flag unsupported claims, a missing or altered CTA, prohibited terms, and channel-specific length limits — and block approval until they're resolved
+- **Grounded multi-channel generation**: email, LinkedIn post, and digital postcard, each with A/B variants, generated only from the brief's approved facts
+- **Automated quality checks** that flag unsupported claims, a missing or altered CTA, prohibited terms, and channel-specific length limits, and block approval until they're resolved
 - **Human review workflow** with four states (Draft, Needs review, Approved, Rejected), rejection reasons, and reviewer notes
-- **Independent regeneration** — regenerating one asset, or regenerating with a specific instruction, never touches the others
+- **Independent regeneration**: regenerating one asset, or regenerating with a specific instruction, never touches the others
 - **Campaign ID and UTM tracking links**, generated automatically and consistently for every asset variant
-- **Measurement plan** — primary and secondary KPIs and a conversion event, derived from the campaign's objective and funnel stage
+- **Measurement plan**: primary and secondary KPIs and a conversion event, derived from the campaign's objective and funnel stage
 - **JSON and Markdown export** of the full campaign package, including review status
-- **Browser-persisted campaigns** — a page refresh doesn't lose your work
+- **Browser-persisted campaigns**: a page refresh doesn't lose your work
 - **Clear failure states** for every AI or network error, with no request that can hang indefinitely
 
 ## 6. Technology stack
