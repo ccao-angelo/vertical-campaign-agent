@@ -52,16 +52,29 @@ export default function AssetCard(props: Props) {
         failed.map((c) => (c.detail ? `${c.label} (${c.detail})` : c.label)).join("; ");
     
     return (
-        <section className="card asset">
+        <section className={`card asset${status ? ` asset-${status}` : ""}`}>
             <header className="card-head">
                 <h3>{CHANNEL_LABELS[channel]}</h3>
                 {status && <span className={`badge badge-${status}`}>{STATUS_LABELS[status]}</span>}
             </header>
 
-            {loading && <p className="muted" role="status">Generating...</p>}
+            {loading && (
+                <div className="skeleton" role="status" aria-label="Generating">
+                    <div className="skeleton-line w-80" />
+                    <div className="skeleton-line w-60" />
+                    <div className="skeleton-line w-40" />
+                </div>
+            )}
             {error && !loading && <ErrorBanner message={error} onRetry={() => onGenerate()} />}
-            {!asset && !loading && !error && <p className="muted">Not generated yet.</p>}
-
+            {!asset && !loading && !error && (
+                <div className="empty-state">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                        <path d="M4 13h4l1.5 3h5L16 13h4" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M5.5 7 4 13v6a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-6l-1.5-6a1 1 0 0 0-1-.8H6.5a1 1 0 0 0-1 .8Z" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                    <p>Not generated yet. Click generate assets above to draft this one.</p>
+                </div>
+            )}
             {asset && (
                 <>
                     <p className="muted small">
@@ -166,7 +179,6 @@ export default function AssetCard(props: Props) {
                     </div>
                 </>
             )}
-
         </section>
     );
 }
