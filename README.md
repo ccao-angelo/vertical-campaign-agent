@@ -19,7 +19,7 @@ The free hosting tier sleeps after inactivity, so the first load after a pause c
 ## 4. Walkthrough
 
 * ![Walkthrough Gif]
-<img src="https://i.imgur.com/qsjlvsd.gif" alt="Walkthrough Video">
+<img width="1884" height="945" alt="Image" src="https://github.com/user-attachments/assets/fd380594-9771-49ea-9dd0-eb6d35d8745a" />
 
 * ![Brief form]
 <img src="./docs/brief-form.png" alt="Brief Form">
