@@ -16,7 +16,10 @@ Coordinating a multi-channel campaign usually means writing each asset separatel
 
 The free hosting tier sleeps after inactivity, so the first load after a pause can take about a minute.
 
-## 4. Walkthrough screenshots
+## 4. Walkthrough
+
+* ![Walkthrough Gif]
+<img src="https://i.imgur.com/qsjlvsd.gif" alt="Walkthrough Video">
 
 * ![Brief form]
 <img src="./docs/brief-form.png" alt="Brief Form">
