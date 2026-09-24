@@ -70,7 +70,7 @@ The browser never calls the AI service directly — the API key is held only on 
 ## 8. Installation instructions
 
 ```bash
-git clone [your repository address]
+git clone https://github.com/ccao-angelo/vertical-campaign-agent.git
 cd vertical-campaign-agent
 npm install
 cp .env.example .env      # Windows: copy .env.example .env
