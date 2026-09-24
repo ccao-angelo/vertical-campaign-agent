@@ -18,16 +18,16 @@ The free hosting tier sleeps after inactivity, so the first load after a pause c
 
 ## 4. Walkthrough
 
-* [Walkthrough Gif]
+* Walkthrough Gif
 <img width="1884" height="945" alt="Image" src="https://github.com/user-attachments/assets/fd380594-9771-49ea-9dd0-eb6d35d8745a" />
 
-* [Brief form]
+* Brief form
 <img src="./docs/brief-form.png" alt="Brief Form">
 
-* [Asset review with automated checks]
+* Asset review with automated checks
 <img src="./docs/asset-review.png" alt="Asset Review">
 
-* [Exporting generated results with options]
+* Exporting generated results with options
 <img src="./docs/export-options.png" alt="Export options">
 
 ## 5. Main features
